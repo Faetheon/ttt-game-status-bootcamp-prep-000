@@ -1,3 +1,23 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @Faetheon
+Sign out
+0
+0 705 Faetheon/ttt-game-status-bootcamp-prep-000
+forked from learn-co-students/ttt-game-status-bootcamp-prep-000
+ Code  Pull requests 0  Projects 0  Insights  Settings
+ttt-game-status-bootcamp-prep-000/lib/game_status.rb
+f4f0e0a  2 days ago
+@Faetheon Faetheon Done.
+@aviflombaum @Faetheon @aturkewi
+     
+106 lines (100 sloc)  1.52 KB
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
@@ -71,8 +91,6 @@ def draw?(board)
     if pos === " " || won
       break draw = false
     else 
-  board.each {|pos|
-    if pos != " " && won?(board) != WIN_COMBINATIONS.select {|win| win = /{won?(board)}/}
       draw = true
     end
   }
@@ -90,9 +108,6 @@ def over?(board)
     end
   elsif draw?(board) === true
     return true
-  if full?(board) === true
-    return "Game over"
-
   else
     return false
   end
@@ -107,12 +122,5 @@ def winner(board)
     else
       return nil
     end
-  if board[won?(board)[0]] === "X"
-    return "X"
-  elsif board[won?(board)[0]] === "O"
-    return "O"
-  else
-    return nil
   end
-end
 end
