@@ -53,16 +53,12 @@ def full?(board)
     return true
   else
    return false
-<<<<<<< HEAD
   end
-=======
  end
->>>>>>> a6d3b7ca977dc7abc8683740f4425a5e9302dedf
 end
 
 def draw?(board)
   draw = false
-<<<<<<< HEAD
   won = WIN_COMBINATIONS.each {|win| 
     counter = 0
     if won?(board) === win
