@@ -1,23 +1,3 @@
-Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- @Faetheon
-Sign out
-0
-0 705 Faetheon/ttt-game-status-bootcamp-prep-000
-forked from learn-co-students/ttt-game-status-bootcamp-prep-000
- Code  Pull requests 0  Projects 0  Insights  Settings
-ttt-game-status-bootcamp-prep-000/lib/game_status.rb
-f4f0e0a  2 days ago
-@Faetheon Faetheon Done.
-@aviflombaum @Faetheon @aturkewi
-     
-106 lines (100 sloc)  1.52 KB
 # Helper Method
 def position_taken?(board, index)
   !(board[index].nil? || board[index] == " ")
