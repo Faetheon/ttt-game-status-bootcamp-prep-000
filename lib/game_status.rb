@@ -53,11 +53,16 @@ def full?(board)
     return true
   else
    return false
+<<<<<<< HEAD
   end
+=======
+ end
+>>>>>>> a6d3b7ca977dc7abc8683740f4425a5e9302dedf
 end
 
 def draw?(board)
   draw = false
+<<<<<<< HEAD
   won = WIN_COMBINATIONS.each {|win| 
     counter = 0
     if won?(board) === win
@@ -71,6 +76,10 @@ def draw?(board)
     if pos === " " || won
       break draw = false
     else 
+=======
+  board.each {|pos|
+    if pos != " " && won?(board) != WIN_COMBINATIONS.select {|win| win = /{won?(board)}/}
+>>>>>>> a6d3b7ca977dc7abc8683740f4425a5e9302dedf
       draw = true
     end
   }
@@ -78,6 +87,7 @@ def draw?(board)
 end
 
 def over?(board)
+<<<<<<< HEAD
   if won?(board) != nil
     if draw?(board)
       return true
@@ -88,12 +98,17 @@ def over?(board)
     end
   elsif draw?(board) === true
     return true
+=======
+  if full?(board) === true
+    return "Game over"
+>>>>>>> a6d3b7ca977dc7abc8683740f4425a5e9302dedf
   else
     return false
   end
 end
 
 def winner(board)
+<<<<<<< HEAD
   if won?(board) != nil
     if board[won?(board)[0]] === "X"
       return "X"
@@ -102,5 +117,13 @@ def winner(board)
     else
       return nil
     end
+=======
+  if board[won?(board)[0]] === "X"
+    return "X"
+  elsif board[won?(board)[0]] === "O"
+    return "O"
+  else
+    return nil
+>>>>>>> a6d3b7ca977dc7abc8683740f4425a5e9302dedf
   end
 end
